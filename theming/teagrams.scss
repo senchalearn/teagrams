@@ -1,0 +1,68 @@
+$base-color: #48423a;
+$include-default-icons: false;
+
+@import 'sencha-touch/default/all';
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-layout;
+@include sencha-loading-spinner;
+@include sencha-list-pullrefresh;
+
+
+.x-toolbar-title {
+  font-family: 'Pacifico', arial, serif;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+.x-list {
+  /* matte, bevel, glossy, recessed, or flat for the type of gradients. */
+  @include background-gradient(#6f6152, 'flat');
+}
+
+.shot {
+  padding: 8px 0;
+  border-bottom: 1px solid #41352c;
+  border-top: 1px solid #41352c;
+
+  img.shot-image {
+    display:block;
+    padding: 8px;
+    margin: 0px auto;
+    border: 1px solid #666;
+    -webkit-box-shadow: 0 0 4px rgba(#333, .5);
+    background:#eee;
+    clear:both;
+  }
+
+  .title {
+    margin: 0px auto 8px;
+    width: 304px;
+    text-shadow: 0 1px 0 rgba(#fff, .5) ;
+    h2 {
+      font-size:1.3em;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .player {
+      color:#ce2e41;
+    }
+
+  }
+}
+
+
+
+.shot {
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #978053),color-stop(1, #d2caba)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#978053, #d2caba); /* Chrome 10+, Saf5.1+ */
+  
+  background: #d2caba;
+}

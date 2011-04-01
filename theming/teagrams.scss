@@ -19,32 +19,51 @@ $include-default-icons: false;
   line-height: 1.4em;
 }
 
+.x-toolbar-title img{
+  margin-top:5px;
+}
+
 .x-list {
   /* matte, bevel, glossy, recessed, or flat for the type of gradients. */
   @include background-gradient(#6f6152, 'bevel');
 }
 
+.username{
+  color: #439c0e;
+}
+
 .shot {
-  padding: 8px 0;
+
+  min-height:144px;
+  font-family: 'Helvetica', arial, serif;
+  
+  .item-wrap{
+    text-align:center;
+  }
+
+  padding: 12px 80px;
   border-bottom: 1px solid #41352c;
   border-top: 1px solid #41352c;
-
-  img.shot-image {
-    display:block;
+  background: #fff url('../theming/images/texture-item.png') repeat-x scroll top left;
+  margin:0 auto;
+  img.teagram-image {
+    display: inline-block;
+    float:left;
     padding: 8px;
     margin: 0px auto;
     border: 1px solid #666;
     -webkit-box-shadow: 0 0 4px rgba(#333, .5);
     background:#eee;
-    clear:both;
   }
 
-  .title {
-    margin: 0px auto 8px;
-    width: 304px;
+  .copy-wrap {
+    display: inline-block;
+    margin:0 10px;
+    float:right;
     text-shadow: 0 1px 0 rgba(#fff, .5) ;
     h2 {
-      font-size:1.3em;
+      margin-top:46px;
+      font-size:1.6em;
       overflow : hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
@@ -52,8 +71,4 @@ $include-default-icons: false;
       -webkit-box-orient: vertical;
     }
   }
-}
-
-.shot {
-  background: #fff url('../theming/images/texture-item.png') repeat-x scroll top left;
 }

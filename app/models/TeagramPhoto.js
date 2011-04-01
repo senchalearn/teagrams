@@ -6,6 +6,8 @@
 // curl https://api.instagram.com/v1/tags/tea/media/recent?access_token=2260821.f59def8.7fe0d31e791e4e62a00fc8f44b831140 | jsonpretty > data_from_instagram_api.json
 
 // We use the "mapping" method in order to drill down to nested objects in the JSON from the Instagram response.
+// Also, even thought we are only actually using the username, the thumbnail_url and the standard_res_url fields in the app currently
+// we may find use for these other fields in the future and of course, we can always add more.
 teagrams.models.TeagramPhoto = Ext.regModel("teagrams.models.TeagramPhoto", {
     fields: [
         {name: "filter", type: "string"},

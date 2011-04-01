@@ -1,5 +1,6 @@
 $base-color: #48423a;
 $include-default-icons: false;
+$loading-spinner-color: #1C1A1A;
 
 @import 'sencha-touch/default/all';
 @include sencha-panel;
@@ -10,7 +11,6 @@ $include-default-icons: false;
 @include sencha-layout;
 @include sencha-loading-spinner;
 @include sencha-list-pullrefresh;
-
 
 .x-toolbar-title {
   font-family: arial, serif;
@@ -24,8 +24,7 @@ $include-default-icons: false;
 }
 
 .x-list {
-  /* matte, bevel, glossy, recessed, or flat for the type of gradients. */
-  @include background-gradient(#6f6152, 'bevel');
+  background-color:#eee;
 }
 
 .username{
@@ -45,6 +44,7 @@ $include-default-icons: false;
   border-bottom: 1px solid #41352c;
   border-top: 1px solid #41352c;
   background: #fff url('../theming/images/texture-item.png') repeat-x scroll top left;
+  /* background: red; */
   margin:0 auto;
   img.teagram-image {
     display: inline-block;

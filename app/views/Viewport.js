@@ -1,4 +1,5 @@
 // The teagrams Viewport is an extension of the Ext.Panel component.
+// This is "main" wrapping view.
 teagrams.views.Viewport = Ext.extend(Ext.Panel, {
     // Let's set some config options for the panel.
     fullscreen: true,

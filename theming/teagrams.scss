@@ -35,13 +35,13 @@ $include-default-icons: false;
 .shot {
 
   min-height:144px;
-  font-family: 'Helvetica', arial, serif;
+  font-family: 'Gruppo', arial, serif;
   
   .item-wrap{
     text-align:center;
   }
 
-  padding: 12px 80px;
+  padding: 12px 40px;
   border-bottom: 1px solid #41352c;
   border-top: 1px solid #41352c;
   background: #fff url('../theming/images/texture-item.png') repeat-x scroll top left;
@@ -62,8 +62,8 @@ $include-default-icons: false;
     float:right;
     text-shadow: 0 1px 0 rgba(#fff, .5) ;
     h2 {
-      margin-top:46px;
-      font-size:1.6em;
+      margin-top:40px;
+      font-size:2.2em;
       overflow : hidden;
       text-overflow: ellipsis;
       display: -webkit-box;

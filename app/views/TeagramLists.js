@@ -4,15 +4,16 @@ var overlay = new Ext.Panel({
     floating: true,
     modal: true,
     centered: true,
-    width: Ext.is.Phone ? 260 : 612,
-    height: Ext.is.Phone ? 220 : 612,
+    width: Ext.is.Phone ? 260 : 658,
+    height: Ext.is.Phone ? 220 : 658,
     styleHtmlContent: true,
-    scroll: 'vertical',
+    scroll: false,
     cls: 'htmlcontent',
     loadmask: true
 });
 
-// This is the list inside in the main list
+
+// This is the list item inside in the main list.
 teagrams.views.TeagramInnerList = Ext.extend(Ext.List, {
 
     // Each item in the InnerList will be rendered with our imgTpl() declared in our Templates.js file.
@@ -55,7 +56,7 @@ teagrams.views.TeagramInnerList = Ext.extend(Ext.List, {
 
 });
 
-
+// Main list component.
 teagrams.views.TeagramLists = Ext.extend(Ext.Panel, {
     layout: 'fit',
     dockedItems: [{

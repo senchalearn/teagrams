@@ -13,7 +13,7 @@ $include-default-icons: false;
 
 
 .x-toolbar-title {
-  font-family: 'Pacifico', arial, serif;
+  font-family: arial, serif;
   font-weight: normal;
   font-size: 1.6em;
   line-height: 1.4em;
@@ -21,7 +21,7 @@ $include-default-icons: false;
 
 .x-list {
   /* matte, bevel, glossy, recessed, or flat for the type of gradients. */
-  @include background-gradient(#6f6152, 'flat');
+  @include background-gradient(#6f6152, 'bevel');
 }
 
 .shot {
@@ -51,18 +51,9 @@ $include-default-icons: false;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
-    .player {
-      color:#ce2e41;
-    }
-
   }
 }
 
-
-
 .shot {
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #978053),color-stop(1, #d2caba)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#978053, #d2caba); /* Chrome 10+, Saf5.1+ */
-  
-  background: #d2caba;
+  background: #fff url('../theming/images/texture-item.png') repeat-x scroll top left;
 }

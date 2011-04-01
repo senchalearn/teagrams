@@ -23,5 +23,3 @@ teagrams.views.Viewport = Ext.extend(Ext.Panel, {
     }
 
 });
-
-

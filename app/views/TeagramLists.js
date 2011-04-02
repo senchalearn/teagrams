@@ -34,6 +34,8 @@ teagrams.views.TeagramInnerList = Ext.extend(Ext.List, {
     }],
 
     // Bind our listeners to the each InnerList item.
+    // On itemtap, we grab the current record so we can create the full size image overlay.
+    // We added a loading animation while the image is downloaded so the user knows what's going on.
     listeners: {
         itemtap: function (list, index, element, event) {
             // Grab a reference the record.

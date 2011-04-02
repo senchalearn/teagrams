@@ -36,16 +36,16 @@ $loading-spinner-color: #1C1A1A;
   min-height:144px;
   font-family: 'Gruppo', arial, serif;
   
-  .item-wrap{
-    text-align:center;
-  }
-
   padding: 12px 40px;
   border-bottom: 1px solid #41352c;
   border-top: 1px solid #41352c;
   background: #fff url('../theming/images/texture-item.png') repeat-x scroll top left;
-  /* background: red; */
   margin:0 auto;
+
+  .item-wrap{
+    text-align:center;
+  }
+
   img.teagram-image {
     display: inline-block;
     float:left;
